@@ -1,6 +1,6 @@
 FROM debian:10.3
 
-COPY . /resume
+COPY ./CV /resume
 
 RUN apt-get update && apt-get install -y \
       texlive-fonts-recommended \
