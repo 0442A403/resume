@@ -7,6 +7,6 @@ docker build --tag resume .
 docker run -it resume
 ```
 
-Резюме будет лежать по /resume/cv-llt.pdf в полученном контейнере.
+Резюме будет лежать по /resume/main.pdf в полученном контейнере.
 
 Петров Дамир Петрович, БПМИ193

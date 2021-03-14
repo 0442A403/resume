@@ -19,7 +19,7 @@ RUN apt-get update && apt-get install -y \
 
 RUN cd resume \
       && pdflatex -interaction=nonstopmode main \
-      && biber cv-llt \
+      && biber main \
       && pdflatex -interaction=nonstopmode main
 
 CMD [ "/bin/bash" ]
