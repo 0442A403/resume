@@ -1,0 +1,45 @@
+\documentclass[a4paper,skipsamekey,11pt,english,russian]{curve}
+
+\usepackage[english,russian]{babel}
+\usepackage{cmap}
+\usepackage{mathtext}
+\usepackage{indentfirst}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{settings}
+
+\addbibresource{projects.bib}
+
+\leftheader{
+  {\LARGE\bfseries\sffamily Петров Дамир Петрович}
+
+  \makefield{\faCalendar}{09.06.2001, 19 лет}
+
+  \makefield{\faEnvelope[regular]}{\texttt{petrovdamir2235@gmail.com}}
+  
+  \makefield{\faBook}{НИУ ВШЭ, Факультет компьютерных наук, 2019 -- 2023}
+  
+  \makefield{\faGlobe}{\url{https://github.com/0442A403}}
+
+  \makefield{\faGlobe}{\url{https://codeforces.com/0442A403}}
+  
+  \par
+}
+
+\rightheader{~}
+\photo[r]{me}
+\photoscale{0.22}
+
+\title{Damir Petrov}
+
+\begin{document}
+\makeheaders[c]
+
+\makerubric{bio}
+
+\makerubric{skills}
+
+\makerubric{achievements}
+
+\input{publications}
+\end{document}

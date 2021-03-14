@@ -18,9 +18,8 @@ RUN apt-get update && apt-get install -y \
       biber
 
 RUN cd resume \
-      && echo -e "\n\n\n\n\n\n\n\n\n" | pdflatex cv-llt -interaction=nonstopmode \
+      && pdflatex -interaction=nonstopmode main \
       && biber cv-llt \
-      && echo -e "\n\n\n\n\n\n\n\n\n" | pdflatex cv-llt -interaction=nonstopmode \
-      | echo "Pdf is waiting for you"
+      && pdflatex -interaction=nonstopmode main
 
 CMD [ "/bin/bash" ]
