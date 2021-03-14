@@ -1,15 +1,10 @@
 on: [push]
 
 jobs:
-  hello_world_job:
-    runs-on: ubuntu-latest
-    name: A job to say hello
+  building-pdf-job:
+    runs-on: debian:10.3
+    name: Building pdf job
     steps:
-    - name: Hello world action step
-      id: hello
-      uses: actions/hello-world-docker-action@v1
-      with:
-        who-to-greet: 'Mona the Octocat'
-    # Use the output from the `hello` step
-    - name: Get the output time
-      run: echo "The time was ${{ steps.hello.outputs.time }}"
+    - name: Building pdf step
+      id: building-pdf
+      uses: ./
