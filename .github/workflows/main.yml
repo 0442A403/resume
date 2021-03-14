@@ -2,7 +2,6 @@ on: [push]
 
 jobs:
   building-pdf-job:
-    runs-on: debian:10.3
     name: Building pdf job
     steps:
     - name: Building pdf step
