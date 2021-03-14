@@ -3,7 +3,8 @@
 Как собрать:
 
 ```bash
-docker build --tag resume . && docker run -it resume
+docker build --tag resume .
+docker run -it resume
 ```
 
 Выходным файлом будет /resume/cv-llt.pdf в полученном Контейнере
