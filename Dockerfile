@@ -22,4 +22,9 @@ RUN cd resume \
       && biber english \
       && pdflatex -interaction=nonstopmode english
 
+RUN cd resume \
+      && pdflatex -interaction=nonstopmode russian \
+      && biber russian \
+      && pdflatex -interaction=nonstopmode russian
+
 CMD [ "/bin/bash" ]
