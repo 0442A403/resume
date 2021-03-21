@@ -18,8 +18,8 @@ RUN apt-get update && apt-get install -y \
       biber
 
 RUN cd resume \
-      && pdflatex -interaction=nonstopmode main \
-      && biber main \
-      && pdflatex -interaction=nonstopmode main
+      && pdflatex -interaction=nonstopmode english \
+      && biber english \
+      && pdflatex -interaction=nonstopmode english
 
 CMD [ "/bin/bash" ]
