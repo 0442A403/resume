@@ -1,12 +1,10 @@
-Привет! Это мое резюме с исходниками. Вы можете оперативно связаться со мной через [Telegram](https://t.me/o442a4o3).
+Hi! this is my resume. You can contact me with [Telegram](https://t.me/o442a4o3).
 
-Как собрать:
+Who to build:
 
 ```bash
 docker build --tag resume .
 docker run -it resume
 ```
 
-Резюме будет лежать по /resume/main.pdf в полученном контейнере.
-
-Петров Дамир Петрович, БПМИ193
+Resume will be on /resume/english.pdf in new docker container.
